@@ -11,5 +11,13 @@ class Program
         // Japanese greeting
         greetings.YoiTsuitachi();
 
+        Fundament fundament = new Fundament();
+        double a = 29;
+        fundament.CheckOddOrEven(a);
+
+        string fact = "Did you know a cow has 4 stomachs?";
+        fundament.GetAnInterestingFact(fact);
+        Console.WriteLine(fact);
+
     }
 }

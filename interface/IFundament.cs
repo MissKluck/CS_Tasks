@@ -16,12 +16,12 @@ public interface IFundament
     /// <summary>
     /// check whether a number is even (divisible by two) or odd
     /// </summary>
-    void CheckOddOrEven();
+    void CheckOddOrEven(double a);
 
     /// <summary>
     /// A method that returns a interesting fact, that the user of the program can define as a parameter argument
     /// </summary>
     /// <param name="fact">a interesting fact</param>
     /// <returns>a fact of type: string</returns>
-    string GetAInterestingFact(string fact);
+    string GetAnInterestingFact(string fact);
 }
