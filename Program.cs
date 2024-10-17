@@ -19,5 +19,11 @@ class Program
         fundament.GetAnInterestingFact(fact);
         Console.WriteLine(fact);
 
+        var x = 148395839;
+        var y = 289244385;
+        fundament.SumTwoNumbers = x + y;
+        Console.WriteLine()
+
+
     }
 }

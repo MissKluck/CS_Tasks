@@ -1,3 +1,6 @@
+using System.Security.Cryptography.X509Certificates;
+using Microsoft.VisualBasic;
+
 public class Fundament : IFundament
 {
     public void CheckOddOrEven(double a)
@@ -19,7 +22,10 @@ public class Fundament : IFundament
 
     public void SumTwoNumbers()
     {
-        throw new NotImplementedException();
+        var x = 10;
+        var y = 11;
+        var result = x + y;
+
     }
 
     public double SumTwoNumbersOfGivenType(double a, double b)
