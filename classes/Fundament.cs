@@ -17,14 +17,14 @@ public class Fundament : IFundament
 
     public string GetAnInterestingFact(string fact)
     {
-        return fact;
+        return "here is a fact " + fact;
     }
 
     public void SumTwoNumbers()
     {
-        var x = 148395839;
-        var y = 289244385;
-        //var result = x + y;
+        long firstNumber = 148395839;
+        long secondNumber = 289244385;
+        Console.WriteLine(firstNumber + secondNumber);
 
     }
 

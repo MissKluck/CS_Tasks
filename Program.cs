@@ -11,19 +11,14 @@ class Program
         // Japanese greeting
         greetings.YoiTsuitachi();
 
+        // Create a new instance of the Fundament class aka implement it into main
         Fundament fundament = new Fundament();
         double a = 29;
         fundament.CheckOddOrEven(a);
 
         string fact = "Did you know a cow has 4 stomachs?";
-        fundament.GetAnInterestingFact(fact);
-        Console.WriteLine(fact);
+        Console.WriteLine(fundament.GetAnInterestingFact(fact));
 
-        //var x = 148395839;
-        //var y = 289244385;
-        var result = x + y;
-        fundament.SumTwoNumbers(result);
-
-
+        fundament.SumTwoNumbers();
     }
 }
