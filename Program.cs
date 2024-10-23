@@ -16,9 +16,20 @@ class Program
         double a = 29;
         fundament.CheckOddOrEven(a);
 
-        string fact = "Did you know a cow has 4 stomachs?";
+        string fact = "Did you know that a cow has 4 stomachs?";
         Console.WriteLine(fundament.GetAnInterestingFact(fact));
 
         fundament.SumTwoNumbers();
+
+        // Extra challenges
+        fundament.PrintFibonnaciSeries(7);
+
+
+        Console.WriteLine(fundament.ReverseString("Hello there"));
+
+        Console.WriteLine(fundament.RecursiveFactorial(5));
+
+
+
     }
 }

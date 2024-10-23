@@ -36,7 +36,7 @@ public class Fundament : IFundament
 
     // Extra challenges
 
-    public void PrintFibonnaciSeries()
+    public void PrintFibonnaciSeries(int n)
     {
         // TODO: Implement the Fibonacci sequence
         int a = 0;
@@ -48,12 +48,27 @@ public class Fundament : IFundament
         a = b
         b = c
         */
+        for (int i = 0; i<n; i++)
+        {
+            c = a + b;
+            Console.WriteLine($"{c} ");
+            a = b;
+            b = c;
+        }
     }
 
     public string ReverseString(string str)
     {
         // TODO: reverse the given string
-        return "";
+        /* 
+        * found the solution at stackoverflow(https://stackoverflow.com/questions/228038/best-way-to-reverse-a-string), 
+        * verified with fellow student that they had created the same code to reverse the string
+        * this function changes the string to an array(a list) of characters
+        * then it reverses the order of the array and when it is converted to a string the word has been reversed
+        */ 
+        char[] charArray = str.ToCharArray();
+        Array.Reverse(charArray);
+        return new string(charArray);
     }
 
     public int RecursiveFactorial(int n)
@@ -64,6 +79,6 @@ public class Fundament : IFundament
         {
             return 1;
         }
-        return n;
+        return n * RecursiveFactorial(n - 1);
     }
 }
